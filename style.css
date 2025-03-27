@@ -1,1 +1,56 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
+h1, h2, h3 {
+  color: #2c6b2f; /* Green color */
+}
+
+a {
+  text-decoration: none;
+  color: #2c6b2f;
+}
+
+/* Header Section */
+header {
+  background-color: #2c6b2f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* Hero Section */
+#hero {
+  background: url('images/hero-background.jpg') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 3rem;
+}
+
+/* Footer */
+footer {
+  background-color: #2c6b2f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
