@@ -74,145 +74,71 @@ footer .social-links a:hover {
   text-decoration: underline;
 }
 
-/* Services Section */
+/* General Styles for the Services Page */
 #services {
-  padding: 60px 20px;  /* Adds padding to top and bottom */
-  background-color: #f4f4f4;  /* Light gray background to differentiate section */
-  text-align: center;  /* Centers text in the section */
-}
-
-#services h2 {
-  font-size: 2.5rem;
-  color: #2c6b2f;  /* Green color for headings */
-  margin-bottom: 40px;  /* Adds space below heading */
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));  /* Creates a responsive grid with 3 cards per row on large screens */
-  gap: 30px;
-}
-
-.service-card {
-  background-color: #ffffff;  /* White background for each card */
-  border: 1px solid #ddd;  /* Light border around cards */
-  border-radius: 10px;  /* Rounded corners for a modern look */
-  padding: 25px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Shadow for depth */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover effect */
-}
-
-.service-card:hover {
-  transform: translateY(-10px);  /* Slight lift effect on hover */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);  /* Enhanced shadow on hover */
-}
-
-.service-card h3 {
-  font-size: 1.8rem;
-  color: #2c6b2f;  /* Green color for card headings */
-  margin-bottom: 15px;  /* Space below headings */
-}
-
-.service-card p {
-  font-size: 1rem;
-  color: #333;  /* Dark text color for better readability */
-  line-height: 1.6;  /* Increases line spacing for better legibility */
-  margin-bottom: 20px;  /* Adds space below text */
-}
-
-.btn-primary {
-  text-decoration: none;
-  background-color: #2c6b2f;  /* Green button background */
-  color: #ffffff;  /* White text color */
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1rem;
+  background-color: #f4f4f4;
+  padding: 60px 20px;
   text-align: center;
-  display: inline-block;
-  transition: background-color 0.3s ease;  /* Smooth background color transition */
-}
-
-.btn-primary:hover {
-  background-color: #1d4a1d;  /* Darker green on hover */
 }
 
 .container {
-  width: 80%;
-  max-width: 1200px;  /* Max width for large screens */
-  margin: 0 auto;  /* Centers the content */
-}
-
-/* General Section Styling */
-#contact {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.contact-container {
-  max-width: 700px;
+  max-width: 1100px;
   margin: 0 auto;
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
   font-size: 2.5rem;
   color: #2c6b2f;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 1.1rem;
-  color: #555;
   margin-bottom: 40px;
 }
 
-.form-group {
-  margin-bottom: 20px;
-  text-align: left;
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-label {
-  display: block;
-  font-size: 1.1rem;
-  color: #333;
-  margin-bottom: 5px;
+.service-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-input, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.service-card h3 {
+  font-size: 1.8rem;
+  color: #2c6b2f;
+  margin-bottom: 10px;
+}
+
+.service-card p {
   font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
 }
 
-textarea {
-  resize: vertical;
-}
-
-button {
+.service-card a {
+  display: inline-block;
+  padding: 10px 20px;
   background-color: #2c6b2f;
   color: white;
-  border: none;
-  padding: 12px 20px;
+  text-decoration: none;
   border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  width: 100%;
-  transition: background-color 0.3s ease;
 }
 
-button:hover {
+.service-card a:hover {
   background-color: #1d4a1d;
 }
 
-/* Responsive styling */
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .contact-container {
-    padding: 20px;
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: 1fr;
   }
 }
