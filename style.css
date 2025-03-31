@@ -120,14 +120,14 @@
  .service-card a {
    display: inline-block;
    padding: 10px 20px;
-   background-color: #2c6b2f;
+   background-color: #3cb371;
    color: white;
    text-decoration: none;
    border-radius: 5px;
  }
  
  .service-card a:hover {
-   background-color: #1d4a1d;
+   background-color: #28a745;
  }
  
  /* Responsive Styles */
