@@ -247,11 +247,17 @@ button[type="submit"]:hover {
    position: relative;
    text-align: center;
    color: white;
+   background-image: url('path_to_your_image.jpg'); /* Add the path to your image here */
+   background-size: cover; /* Ensures the image covers the entire section */
+   background-position: center center; /* Centers the image */
+   background-repeat: no-repeat; /* Ensures the image does not repeat */
+   height: 400px; /* Adjust height as needed */
+   z-index: 1; /* Sends the background image to the back */
 }
 
 .hero-content {
    position: relative;
-   z-index: 2;
+   z-index: 2; /* Ensures the text/content appears above the background image */
 }
 
 .hero-img {
@@ -260,27 +266,6 @@ button[type="submit"]:hover {
    position: absolute;
    top: 0;
    left: 0;
-   z-index: 1;
-   opacity: 0.5; /* Slight opacity to give text a more readable contrast */
-}
-
-#hero {
-   position: relative;
-   text-align: center;
-   color: white;
-}
-
-.hero-content {
-   position: relative;
-   z-index: 2;
-}
-
-.hero-img {
-   width: 100%;
-   height: auto;
-   position: absolute;
-   top: 0;
-   left: 0;
-   z-index: 1;
+   z-index: -1; /* Keeps the image behind other content */
    opacity: 0.5; /* Slight opacity to give text a more readable contrast */
 }
