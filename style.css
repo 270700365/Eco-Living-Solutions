@@ -33,7 +33,23 @@
    font-weight: 300;
    color: #ffffff;  /* White color for the tagline */
  }
- 
+ /* General Button Styles */
+.btn-primary {
+   display: inline-block;
+   padding: 12px 25px;
+   background-color: #3cb371;  /* Bright green background */
+   color: white;
+   text-decoration: none;
+   border-radius: 5px;
+   font-size: 1.2rem;
+   text-align: center;
+}
+
+/* Hover Effect for Buttons */
+.btn-primary:hover {
+   background-color: #28a745; /* Slightly brighter green when hovered */
+}
+
  /* Navigation */
  header nav ul {
    list-style: none;
