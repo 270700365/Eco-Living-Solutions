@@ -410,3 +410,25 @@ button:focus {
   margin-top: 15px;
   line-height: 1.5;
 }
+/* Button Styling */
+.btn-primary {
+  padding: 15px 30px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px; /* Adjust margin for spacing */
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+  transform: translateY(-5px);
+}
+
+.btn-primary:focus {
+  outline: none;
+}
