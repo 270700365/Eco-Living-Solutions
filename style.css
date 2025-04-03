@@ -68,7 +68,7 @@ header nav ul li a:hover {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 40px;
   z-index: 1;
   margin-bottom: 0; /* Remove bottom margin */
 }
