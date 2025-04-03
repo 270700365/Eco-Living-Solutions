@@ -1,7 +1,9 @@
 /* General Styles */
 body {
    font-family: Arial, sans-serif;
-   background-color: #f4f4f4;
+   background-color: #f4f4f9; /* Light background color for the whole page */
+   margin: 0;
+   padding: 0;
    color: #333;
 }
 
@@ -32,24 +34,6 @@ header .logo p {
    font-size: 1.2rem;
    font-weight: 300;
    color: #ffffff;  /* White color for the tagline */
-}
-
-/* General Button Styles */
-.btn-primary {
-   display: inline-block;
-   padding: 12px 25px;
-   background-color: #4CAF50;  /* Bright green background */
-   color: white;
-   text-decoration: none;
-   border-radius: 5px;
-   font-size: 1.2rem;
-   text-align: center;
-   transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
-}
-
-/* Hover Effect for Buttons */
-.btn-primary:hover {
-   background-color: #45a049; /* Slightly brighter green when hovered */
 }
 
 /* Navigation */
@@ -157,6 +141,132 @@ footer .social-links a:hover {
    }
 }
 
+/* Quote Section Styles */
+#self-quote {
+   text-align: center;
+   margin: 50px auto;
+   padding: 20px;
+   max-width: 600px;
+   background-color: #ffffff; /* White background for the form */
+   border-radius: 10px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+#self-quote h2 {
+   font-size: 2rem;
+   color: #333;
+   margin-bottom: 20px;
+}
+
+#self-quote p {
+   font-size: 1rem;
+   color: #666;
+   margin-bottom: 20px;
+}
+
+.quote-box {
+   background-color: #f9f9f9;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+label {
+   display: block;
+   margin-bottom: 8px;
+   font-weight: bold;
+   color: #333;
+}
+
+input, select {
+   width: 100%;
+   padding: 12px;
+   margin: 10px 0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 1rem;
+}
+
+button {
+   padding: 12px 20px;
+   background-color: #4CAF50; /* Green background */
+   color: white;
+   font-size: 1.1rem;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   width: 100%; /* Makes the button stretch the full width of the form */
+}
+
+button:hover {
+   background-color: #45a049; /* Darker green when hovered */
+}
+
+button:focus {
+   outline: none; /* Remove outline when the button is clicked */
+}
+
+#quoteResult {
+   margin-top: 20px;
+   display: none; /* Hidden by default */
+   font-size: 1.2rem;
+   font-weight: bold;
+   color: #333;
+}
+
+#quoteMessage {
+   color: #4CAF50; /* Green color for the quote message */
+}
+
+/* Review Section Styles */
+#reviews {
+   padding: 50px;
+   background-color: #f9f9f9;
+   text-align: center;
+}
+
+#reviews h2 {
+   font-size: 2rem;
+   color: #333;
+   margin-bottom: 40px;
+}
+
+.review {
+   background-color: #fff;
+   padding: 20px;
+   margin: 20px 0;
+   border-radius: 8px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.reviewer-name {
+   font-weight: bold;
+   font-size: 1.1rem;
+   color: #333;
+}
+
+.star-rating {
+   display: inline-block;
+   color: #ffd700; /* Gold color for stars */
+}
+
+.star {
+   font-size: 1.5rem;
+   margin: 0 2px;
+}
+
+.review-text {
+   font-size: 1rem;
+   color: #555;
+   margin-top: 15px;
+   line-height: 1.5;
+}
 
 /* General Styles for Login Page */
 #login {
@@ -269,7 +379,6 @@ button[type="submit"]:hover {
    height: 100%;
    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay with 40% opacity */
    z-index: 1; /* Ensure overlay is behind the content but above the image */
-   
 }
 .hero-img {
    width: 100%;
@@ -291,144 +400,4 @@ button[type="submit"]:hover {
   height: auto;       /* Maintains the aspect ratio */
   display: block;     /* Removes any space below the GIF */
   margin: 20px 0;     /* Optional: adds space above and below the GIF */
-}
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9; /* Light background color for the whole page */
-  margin: 0;
-  padding: 0;
-}
-
-#self-quote {
-  text-align: center;
-  margin: 50px auto;
-  padding: 20px;
-  max-width: 600px;
-  background-color: #ffffff; /* White background for the form */
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
-}
-
-/* Heading */
-#self-quote h2 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-#self-quote p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-/* Form Styling */
-.quote-box {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: #333;
-}
-
-input, select {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield; /* Hides the arrows in number input for better UI */
-}
-
-/* Button Styling */
-button {
-  padding: 12px 20px;
-  background-color: #4CAF50; /* Green background */
-  color: white;
-  font-size: 1.1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%; /* Makes the button stretch the full width of the form */
-}
-
-button:hover {
-  background-color: #45a049; /* Darker green when hovered */
-}
-
-button:focus {
-  outline: none; /* Remove outline when the button is clicked */
-}
-
-/* Result Box */
-#quoteResult {
-  margin-top: 20px;
-  display: none; /* Hidden by default */
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-}
-
-#quoteMessage {
-  color: #4CAF50; /* Green color for the quote message */
-}
-/* General Review Section */
-#reviews {
-   padding: 50px;
-   background-color: #f9f9f9;
-   text-align: center;
-}
-
-#reviews h2 {
-   font-size: 2rem;
-   color: #333;
-   margin-bottom: 40px;
-}
-
-.review {
-   background-color: #fff;
-   padding: 20px;
-   margin: 20px 0;
-   border-radius: 8px;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.review-header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-
-.reviewer-name {
-   font-weight: bold;
-   font-size: 1.1rem;
-   color: #333;
-}
-
-.star-rating {
-   display: inline-block;
-   color: #ffd700; /* Gold color for stars */
-}
-
-.star {
-   font-size: 1.5rem;
-   margin: 0 2px;
-}
-
-.review-text {
-   font-size: 1rem;
-   color: #555;
-   margin-top: 15px;
-   line-height: 1.5;
 }
