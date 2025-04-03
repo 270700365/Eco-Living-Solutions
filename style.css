@@ -359,12 +359,16 @@ button[type="submit"]:hover {
    background-size: cover; /* Ensures the image covers the entire section */
    background-position: center center; /* Centers the image */
    background-repeat: no-repeat; /* Ensures the image does not repeat */
-   height: 400px; /* Adjust height as needed */
+   height: 500px; /* Adjust height as needed */
    z-index: 1; /* Sends the background image to the back */
 }
 
 .hero-content {
    position: relative;
+    top: 50%; /* Center it vertically */
+   left: 50%;
+   transform: translate(-50%, -50%); /* Center text perfectly */
+}
   z-index: 2; /* Ensures the text/content appears above the background image */
  padding: 20px; /* Optional: Add padding to give space between text and the edges */
 }
