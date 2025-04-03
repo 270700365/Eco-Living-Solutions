@@ -147,7 +147,7 @@ header nav ul li a:hover {
 
 .service-card h3 {
   font-size: 1.8rem;
-  color: #2c6b2f;
+  color: black !important;
   margin-bottom: 10px;
 }
 
