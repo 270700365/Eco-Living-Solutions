@@ -116,3 +116,116 @@
         <p class="review-text">Good service, but there were a few things I expected to be clearer. Still, a decent experience.</p>
     </div>
 </section>
+<script>
+   // Wait for the DOM to load
+   document.addEventListener("DOMContentLoaded", function() {
+       const reviews = document.querySelectorAll('.star-rating');
+
+       // Loop through each review
+       reviews.forEach(function(review) {
+           const rating = review.getAttribute('data-rating');
+           const stars = review.querySelectorAll('.star');
+           
+           // Set the filled stars based on the rating
+           for (let i = 0; i < rating; i++) {
+               stars[i].innerHTML = "&#9733;";  // Filled star
+           }
+           
+           // Set the empty stars for the rest
+           for (let i = rating; i < stars.length; i++) {
+               stars[i].innerHTML = "&#9734;";  // Empty star
+           }
+       });
+   });
+</script>
+
+</body>
+</html>
+Option 2: Placing JavaScript in <head> (Not Recommended for DOM Manipulation)
+html
+Copy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file here -->
+
+    <!-- Script inside head -->
+    <script>
+       // Wait for the DOM to load
+       document.addEventListener("DOMContentLoaded", function() {
+           const reviews = document.querySelectorAll('.star-rating');
+
+           // Loop through each review
+           reviews.forEach(function(review) {
+               const rating = review.getAttribute('data-rating');
+               const stars = review.querySelectorAll('.star');
+               
+               // Set the filled stars based on the rating
+               for (let i = 0; i < rating; i++) {
+                   stars[i].innerHTML = "&#9733;";  // Filled star
+               }
+               
+               // Set the empty stars for the rest
+               for (let i = rating; i < stars.length; i++) {
+                   stars[i].innerHTML = "&#9734;";  // Empty star
+               }
+           });
+       });
+    </script>
+</head>
+<body>
+
+<section id="reviews">
+    <h2>Customer Reviews</h2>
+
+    <!-- Review 1 -->
+    <div class="review">
+        <div class="review-header">
+            <span class="reviewer-name">John Doe</span>
+            <div class="star-rating" data-rating="4">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+            </div>
+        </div>
+        <p class="review-text">This service is amazing! I learned so much about sustainability and how I can make my home more eco-friendly.</p>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="review">
+        <div class="review-header">
+            <span class="reviewer-name">Jane Smith</span>
+            <div class="star-rating" data-rating="5">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </div>
+        <p class="review-text">Fantastic experience! Highly recommend for anyone looking to live a greener lifestyle.</p>
+    </div>
+
+    <!-- Review 3 -->
+    <div class="review">
+        <div class="review-header">
+            <span class="reviewer-name">Mark Johnson</span>
+            <div class="star-rating" data-rating="2">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+                <span class="star">&#9734;</span>
+                <span class="star">&#9734;</span>
+            </div>
+        </div>
+        <p class="review-text">Good service, but there were a few things I expected to be clearer. Still, a decent experience.</p>
+    </div>
+</section>
+
+</body>
+</html>
