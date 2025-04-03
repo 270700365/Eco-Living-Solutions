@@ -272,3 +272,10 @@ button[type="submit"]:hover {
   max-width: 800px;   /* Optional: limit the size */
   height: auto;       /* Maintains aspect ratio */
 }
+.business-gif img {
+  width: 100%;        /* Makes the GIF fill the width of its container */
+  max-width: 600px;   /* Optional: limit the width */
+  height: auto;       /* Maintains the aspect ratio */
+  display: block;     /* Removes any space below the GIF */
+  margin: 20px 0;     /* Optional: adds space above and below the GIF */
+}
