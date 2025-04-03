@@ -153,7 +153,26 @@
       <p id="quoteMessage"></p>
     </div>
   </section>
+  
+<script>
+// Handle quote request form submission
+document.getElementById('quote-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent page reload
 
+  // Get form values
+  const serviceType = document.getElementById('service-type').value;
+  const email = document.getElementById('email').value;
+  const details = document.getElementById('details').value;
+
+  // Show a message to the user after they submit the form
+  document.getElementById('quoteResult').style.display = 'block';
+  document.getElementById('quoteMessage').innerText = `Quote request submitted for ${serviceType}. We'll contact you at ${email} soon!`;
+
+  // Reset the form
+  document.getElementById('quote-form').reset();
+});
+</script>
+  
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 EcoLiving Solutions | Designed with Sustainability in Mind</p>
