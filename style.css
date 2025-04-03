@@ -72,13 +72,6 @@ header nav ul li a:hover {
   margin-bottom: 0; /* Remove bottom margin */
 }
 
-#hero {
-  background-image: url('action.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .hero-content {
   position: relative;
   z-index: 2;
@@ -92,21 +85,20 @@ header nav ul li a:hover {
    left: 0;
    width: 100%;
    height: 100%;
-   background-color: rgba(0, 0, 0, 0.4);
+   background-color: rgba(0, 0, 0, 0);
    z-index: 1;
  }
  
 .hero-img {
   width: 100%;
-  height: 100%; /* Ensure the image fully covers the hero section */
+  height: auto; /* Ensure the image fully covers the hero section */
   object-fit: cover; /* Make sure the image covers the area without distorting */
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0; /* Place the image behind the content */
-  opacity: 0.5; /* Adjust opacity as needed */
+  z-index: -1; /* Place the image behind the content */
+  opacity: 1; /* Adjust opacity as needed */
 }
-Explanation:
 
 .business-image img {
   width: 100%;
