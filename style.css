@@ -267,3 +267,8 @@ button[type="submit"]:hover {
    z-index: -1; /* Keeps the image behind other content */
    opacity: 0.5; /* Slight opacity to give text a more readable contrast */
 }
+.business-image img {
+  width: 100%;        /* Makes the image fill the width of its container */
+  max-width: 800px;   /* Optional: limit the size */
+  height: auto;       /* Maintains aspect ratio */
+}
