@@ -5,6 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EcoLiving Solutions - Sustainable Living</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Add JavaScript here -->
+  <script>
+    function calculateQuote() {
+      const serviceType = document.getElementById('serviceType').value;
+      const areaSize = document.getElementById('areaSize').value;
+      const urgency = document.getElementById('urgency').value;
+
+      let basePrice = 0;
+      let pricePerSqFt = 0;
+
+      if (serviceType === 'cleaning') {
+        pricePerSqFt = 0.25;
+      } else if (serviceType === 'consulting') {
+        pricePerSqFt = 0.50;
+      } else if (serviceType === 'audit') {
+        pricePerSqFt = 0.30;
+      }
+
+      let totalPrice = pricePerSqFt * areaSize;
+
+      if (urgency === 'express') {
+        totalPrice *= 1.25; // Extra cost for express service
+      }
+
+      const quoteMessage = `Your estimated price for ${serviceType} is $${totalPrice.toFixed(2)}.`;
+      document.getElementById('quoteMessage').innerText = quoteMessage;
+      document.getElementById('quoteResult').style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+
+  <section id="self-quote">
+    <h2>Get Your Quote</h2>
+    <form id="quoteForm">
+      <label for="serviceType">Choose a service:</label>
+      <select id="serviceType">
+        <option value="cleaning">Commercial Cleaning</option>
+        <option value="consulting">Sustainability Consulting</option>
+        <option value="audit">Energy Audit</option>
+      </select>
+      
+      <label for="areaSize">Area size (sq ft):</label>
+      <input type="number" id="areaSize" placeholder="Enter area size" required>
+      
+      <label for="urgency">Urgency:</label>
+      <select id="urgency">
+        <option value="standard">Standard</option>
+        <option value="express">Express</option>
+      </select>
+
+      <button type="button" onclick="calculateQuote()">Get Quote</button>
+    </form>
+
+    <div id="quoteResult" style="display: none;">
+      <p id="quoteMessage"></p>
+    </div>
+  </section>
+
+</body>
+</html>
+
 </head>
 <body>
   <!-- Header Section with Navigation -->
