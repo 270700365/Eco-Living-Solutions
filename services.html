@@ -94,6 +94,36 @@
       </div>
     </div>
   </section>
+<section id="quote-request">
+  <h2>Get Your Quote</h2>
+  <p>Fill out the form below to receive a quote for our services.</p>
+  <form id="quote-form">
+    <div class="form-group">
+      <label for="service-type">Select Service Type:</label>
+      <select id="service-type" name="service-type">
+        <option value="consultation">Consultation</option>
+        <option value="installation">Installation</option>
+        <option value="maintenance">Maintenance</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <div class="form-group">
+      <label for="details">Additional Details (optional):</label>
+      <textarea id="details" name="details"></textarea>
+    </div>
+
+    <button type="submit">Request Quote</button>
+  </form>
+
+  <div id="quoteResult" style="display:none;">
+    <p id="quoteMessage"></p>
+  </div>
+</section>
 
   <!-- Quote Section -->
   <section id="self-quote">
