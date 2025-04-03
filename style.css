@@ -2,7 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  color: #333;
+  color: black;
   margin: 0; /* Ensure no margin around the body */
   padding: 0; /* Remove padding */
 }
@@ -153,7 +153,7 @@ header nav ul li a:hover {
 
 .service-card p {
   font-size: 1rem;
-  color: #black;
+  color: black;
   margin-bottom: 20px;
 }
 
