@@ -121,6 +121,8 @@ header nav ul li a:hover {
   text-align: center;
   margin-top: 0; /* Remove space above services section */
   padding-top: 0; /* Remove unnecessary padding */
+   max-width: 900px; /* Set a max-width for the section */
+  margin: 0 auto; /* Center the section */
 }
 
 .services-grid {
