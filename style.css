@@ -383,3 +383,52 @@ button:focus {
 #quoteMessage {
   color: #4CAF50; /* Green color for the quote message */
 }
+/* General Review Section */
+#reviews {
+   padding: 50px;
+   background-color: #f9f9f9;
+   text-align: center;
+}
+
+#reviews h2 {
+   font-size: 2rem;
+   color: #333;
+   margin-bottom: 40px;
+}
+
+.review {
+   background-color: #fff;
+   padding: 20px;
+   margin: 20px 0;
+   border-radius: 8px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.reviewer-name {
+   font-weight: bold;
+   font-size: 1.1rem;
+   color: #333;
+}
+
+.star-rating {
+   display: inline-block;
+   color: #ffd700; /* Gold color for stars */
+}
+
+.star {
+   font-size: 1.5rem;
+   margin: 0 2px;
+}
+
+.review-text {
+   font-size: 1rem;
+   color: #555;
+   margin-top: 15px;
+   line-height: 1.5;
+}
