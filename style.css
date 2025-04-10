@@ -28,8 +28,10 @@ header {
 header .logo h1 {
   font-size: 3rem;
   color: #ffffff;
+  margin-top: -20px; /* This will raise the heading by 20px */
   margin-bottom: 10px;
 }
+
 
 header .logo p {
   font-size: 1.2rem;
