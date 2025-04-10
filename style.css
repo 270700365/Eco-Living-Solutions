@@ -216,21 +216,64 @@ footer .social-links a:hover {
   text-decoration: underline;
 }
 
-/* Additional styles for forms, login, etc. */
+/* Ensure the login section takes full viewport height and is centered */
 #login {
-  background-color: #f4f4f4;
-  padding: 60px 20px;
-  text-align: center;
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 100vh; /* Take full viewport height */
+  background-color: #f9f9f9; /* Optional: light background for contrast */
 }
 
 .container {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center text inside the container */
+  max-width: 400px; /* Limit the width of the login form */
+  padding: 20px;
+  background-color: #fff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners for the container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the box */
+  width: 100%; /* Ensure the container takes full width within max-width */
 }
+
+/* Additional styling for form elements */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-form button {
+  padding: 15px 30px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #45a049;
+  transform: translateY(-5px);
+}
+
+.signup-link {
+  margin-top: 15px;
+}
+
+.signup-link a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
 
 h2 {
   font-size: 2rem;
