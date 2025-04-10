@@ -561,4 +561,30 @@ button:hover {
 #quoteResult {
   margin-top: 20px;
   font-size: 1.2rem;
+} 
+
+/* Style for each section box */
+.about-box {
+  background-color: #fff; /* White background for the box */
+  padding: 20px; /* Padding inside the box */
+  margin: 20px 0; /* Margin between boxes */
+  border-radius: 8px; /* Rounded corners for the box */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the box */
+  color: #333; /* Text color */
+  font-size: 1.1rem; /* Slightly larger text for readability */
 }
+
+.about-box h2, .about-box h3, .about-box h4 {
+  color: #458467; /* Set heading color to match theme */
+}
+
+.audience-group {
+  margin-bottom: 20px; /* Space between each grouped item */
+}
+
+.business-image img, .business-gif img {
+  width: 100%; /* Ensure images fill the width of their container */
+  max-width: 100%; /* Prevent images from overflowing */
+  border-radius: 8px; /* Round the corners of images for consistency */
+}
+
