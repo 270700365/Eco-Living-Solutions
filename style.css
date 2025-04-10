@@ -18,7 +18,7 @@ a {
 
 /* Header Section */
 header {
-  background-color: #2c6b2f; 
+  background-color: #458467; 
   color: white;
   padding: 20px;
   text-align: center;
@@ -121,7 +121,7 @@ header nav ul li a:hover {
   text-align: center;
   margin-top: 0; /* Remove space above services section */
   padding-top: 0; /* Remove unnecessary padding */
-   max-width: 900px; /* Set a max-width for the section */
+  max-width: 900px; /* Set a max-width for the section */
   margin: 0 auto; /* Center the section */
 }
 
@@ -160,14 +160,14 @@ header nav ul li a:hover {
 .service-card a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #819171;
   color: white;
   text-decoration: none;
   border-radius: 5px;
 }
 
 .service-card a:hover {
-  background-color: #45a049;
+  background-color: #9CAF88;
 }
 
 /* Responsive Styles */
@@ -197,7 +197,7 @@ section {
 
 /* Ensure no additional space between footer and content */
 footer {
-  background-color: #2c6b2f;
+  background-color: #458467;
   color: white;
   text-align: center;
   padding: 20px;
@@ -231,7 +231,7 @@ footer .social-links a:hover {
 
 h2 {
   font-size: 2rem;
-  color: #2c6b2f;
+  color: #458467;
   margin-bottom: 30px;
 }
 
@@ -242,7 +242,7 @@ h2 {
 
 label {
   font-size: 1rem;
-  color: #2c6b2f;
+  color: #458467;
   margin-bottom: 5px;
   display: block;
 }
@@ -257,7 +257,7 @@ input[type="password"] {
 }
 
 button[type="submit"] {
-  background-color: #2c6b2f;
+  background-color: #458467;
   color: white;
   padding: 12px 20px;
   font-size: 1rem;
@@ -267,7 +267,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #1d4a1d;
+  background-color: #819171;
 }
 
 .signup-link {
@@ -275,7 +275,7 @@ button[type="submit"]:hover {
 }
 
 .signup-link a {
-  color: #2c6b2f;
+  color: #458467;
   text-decoration: none;
 }
 
@@ -335,7 +335,7 @@ input[type="number"] {
 
 button {
   padding: 12px 20px;
-  background-color: #4CAF50;
+  background-color: #9CAF88;
   color: white;
   font-size: 1.1rem;
   border: none;
@@ -345,7 +345,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #819171;
 }
 
 button:focus {
@@ -361,7 +361,7 @@ button:focus {
 }
 
 #quoteMessage {
-  color: #4CAF50;
+  color: #9CAF88;
 }
 
 #reviews {
@@ -415,7 +415,7 @@ button:focus {
 /* Button Styling */
 .btn-primary {
   padding: 15px 30px;
-  background-color: #4CAF50;
+  background-color: #9CAF88;
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
@@ -427,13 +427,14 @@ button:focus {
 }
 
 .btn-primary:hover {
-  background-color: #45a049;
+  background-color: #819171;
   transform: translateY(-5px);
 }
 
 .btn-primary:focus {
   outline: none;
 }
+
 /* General Styles for the Blog Section */
 #blog {
   background-color: #f4f4f4;
@@ -468,7 +469,7 @@ h2 {
 
 .blog-post h3 {
   font-size: 1.8rem;
-  color: #2c6b2f;
+  color: #458467;
   margin-bottom: 10px;
 }
 
@@ -486,7 +487,7 @@ h2 {
 
 .blog-post .read-more {
   display: inline-block;
-  background-color: #4CAF50;
+  background-color: #9CAF88;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -494,7 +495,7 @@ h2 {
 }
 
 .blog-post .read-more:hover {
-  background-color: #45a049;
+  background-color: #819171;
 }
 
 /* Responsive Design */
@@ -543,7 +544,7 @@ input, select, textarea {
 
 button {
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #9CAF88;
   color: white;
   border: none;
   border-radius: 5px;
@@ -551,7 +552,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #819171;
 }
 
 #quoteResult {
