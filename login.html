@@ -5,28 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - EcoLiving Solutions</title>
   <link rel="stylesheet" href="style.css">
-   <style>
-    /* Button Styling */
-    .btn-primary {
+  <style>
+    /* Ensure the login section takes full viewport height and is centered */
+    #login {
+      display: flex;
+      justify-content: center; /* Horizontally center the content */
+      align-items: center; /* Vertically center the content */
+      height: 100vh; /* Take full viewport height */
+      background-color: #f9f9f9; /* Optional: light background for contrast */
+    }
+
+    .container {
+      text-align: center; /* Center text inside the container */
+      max-width: 400px; /* Limit the width of the login form */
+      padding: 20px;
+      background-color: #fff; /* White background for the form */
+      border-radius: 8px; /* Rounded corners for the container */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the box */
+      width: 100%; /* Ensure the container takes full width within max-width */
+    }
+
+    /* Additional styling for form elements */
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .login-form input {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .login-form button {
       padding: 15px 30px;
       background-color: #4CAF50;
       color: white;
-      text-decoration: none;
       font-size: 1.2rem;
       border-radius: 5px;
-      text-align: center;
-      display: inline-block;
+      border: none;
+      cursor: pointer;
       transition: background-color 0.3s ease, transform 0.3s ease;
-      margin-top: 20px;
     }
 
-    .btn-primary:hover {
+    .login-form button:hover {
       background-color: #45a049;
       transform: translateY(-5px);
     }
 
-    .btn-primary:focus {
-      outline: none;
+    .signup-link {
+      margin-top: 15px;
+    }
+
+    .signup-link a {
+      color: #4CAF50;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -38,7 +73,7 @@
       <h1>EcoLiving Solutions</h1>
       <p>Empowering Sustainable Living</p>
     </div>
-     <nav>
+    <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li> <!-- About page link -->
